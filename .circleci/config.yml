@@ -3,9 +3,9 @@ jobs:
   one:
     docker:
       - image: cimg/ruby:2.6.8
-      auth: 
-        username: kaif3120
-        password: $DOC_PASS #env
+        auth: 
+          username: kaif3120
+          password: $DOC_PASS #env
     steps:
       - checkout
       - run: echo "A first hello"
@@ -13,9 +13,9 @@ jobs:
   two:
     docker:
       - image: cimg/ruby:3.0.2
-      auth: 
-        username: kaif3120
-        password: $DOC_PASS
+        auth: 
+          username: kaif3120
+          password: $DOC_PASS
     steps:
       - checkout
       - run: echo "A more familiar Hi"
